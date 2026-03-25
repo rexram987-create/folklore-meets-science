@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הברווזן - מאגדה למציאות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap');
+        body { font-family: 'Heebo', sans-serif; }
+        #lightbox { display: none; }
+        #lightbox.active { display: flex; }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col">
+
+    <!-- תפריט ניווט -->
+    <nav class="bg-gray-900 border-b border-gray-800 p-5 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center max-w-5xl">
+            <a href="../index.html" class="text-xl font-bold text-gray-400 hover:text-white transition">← חזרה לראשי</a>
+            <span class="text-2xl font-black text-blue-400">מחקר: הברווזן (Platypus)</span>
+        </div>
+    </nav>
+
+    <main class="flex-grow container mx-auto px-6 py-10 max-w-4xl">
+        
+        <header class="mb-12 border-b border-gray-800 pb-10">
+            <h1 class="text-5xl md:text-7xl font-black mb-6 text-white leading-tight">הברווזן</h1>
+            <p class="text-3xl text-cyan-400 font-medium">ממתיחה של פוחלצים אל פלא אבולוציוני שובר חוקים</p>
+        </header>
+
+        <!-- מחקר אטימולוגי נרחב -->
+        <section class="mb-14 bg-gray-900 p-8 rounded-3xl border border-gray-700 shadow-2xl">
+            <h2 class="text-4xl font-black mb-8 text-blue-400 border-b border-gray-700 pb-4">מחקר אטימולוגי: מקור השמות</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800">
+                    <h3 class="text-2xl font-bold text-cyan-300 mb-4">השם המדעי הטקסונומי: Ornithorhynchus anatinus</h3>
+                    <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                        השם המדעי שניתן ליצור הזה הוא ניסיון נואש של המדענים לתאר את המראה המוזר שלו באמצעות שילוב של מונחים מיוונית עתיקה ולטינית:
+                    </p>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 font-bold ml-3 text-xl w-40 shrink-0">Ornitho (יוונית):</span>
+                            <span class="text-gray-300">קידומת שמשמעותה "ציפור" או "עוף" (όρνις - ornis).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 font-bold ml-3 text-xl w-40 shrink-0">rhynchus (יוונית):</span>
+                            <span class="text-gray-300">משמעותו "חרטום" או "מקור" (ρύγχος - rhynchos). ביחד: "בעל חרטום של עוף".</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 font-bold ml-3 text-xl w-40 shrink-0">anatinus (לטינית):</span>
+                            <span class="text-gray-300">שם המין, שפירושו הפשוט הוא "דמוי ברווז" או "שייך לברווז". משמעות השם המלא היא: <em>"בעל מקור העוף דמוי הברווז"</em>.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800">
+                    <h3 class="text-2xl font-bold text-yellow-400 mb-4">השם הנפוץ (באנגלית): Platypus</h3>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start">
+                            <span class="text-yellow-400 font-bold ml-3 text-xl w-40 shrink-0">Platypus:</span>
+                            <span class="text-gray-300">מגיע מיוונית עתיקה (πλατύπους). המילה מורכבת מ-<em>platys</em> (שטוח, רחב) ומ-<em>pous</em> (רגל). כלומר: "בעל רגליים שטוחות/רחבות". מעניין לציין שהשם הזה ניתן במקור לסוג של חיפושית, אך בסופו של דבר נשאר מזוהה עם היונק האוסטרלי.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- תגלית היסטורית -->
+        <section class="mb-14 bg-gray-900/50 p-8 rounded-3xl space-y-8 text-xl text-gray-300 leading-relaxed">
+            <div>
+                <h2 class="text-3xl font-bold text-white mb-4">התגלית שהטריפה את המדענים</h2>
+                <p>בשנת <strong>1798</strong>, קפטן <strong>ג'ון האנטר (John Hunter, 1737–1821)</strong>, המושל השני של ניו סאות' ויילס שבאוסטרליה, נתקל ביצור ביזארי. הוא שלח פוחלץ שלו יחד עם איור בחזרה לבריטניה. כשהחבילה הגיעה ללונדון, הקהילה המדעית הייתה משוכנעת שזו רמאות.</p>
+                <p class="mt-4">
+                    בשנת <strong>1799</strong>, הזואולוג הבריטי הנודע <strong>ג'ורג' שו (George Shaw, 1751–1813)</strong>, בחן את הפוחלץ. בימים ההם, פוחלצים מזויפים (כמו בתולות ים שנתפרו מקופים ודגים) היו נפוצים בקרב מלחים שרצו להרוויח כסף. שו היה כל כך בטוח שאיזה פוחלץ סיני מיומן תפר מקור של ברווז לגוף של חיה דמוית בונה, שהוא פשוט <strong>לקח מספריים וניסה לגזור את המקור כדי למצוא את התפרים!</strong> עד היום, אם תלכו למוזיאון להיסטוריה של הטבע בלונדון ותבקשו לראות את הפוחלץ המקורי, תוכלו להבחין בסימני המספריים של שו. רק לאחר בדיקה מדוקדקת, המדענים נאלצו להודות בהלם: "המפלצת" של אוסטרליה אמיתית.
+                </p>
+            </div>
+        </section>
+
+        <!-- מיתוס לעומת מציאות והבדלים ביולוגיים -->
+        <section class="mb-14 space-y-8 text-xl text-gray-300 leading-relaxed">
+            <div class="border-t border-gray-700 pt-8">
+                <h2 class="text-3xl font-bold text-white mb-4">המציאות: יונק ששובר את כל החוקים</h2>
+                <p>אם המדענים חשבו שהמראה שלו מוזר, הביולוגיה שלו התבררה כמוזרה פי כמה. הברווזן שייך לסדרת יונקי הביב (Monotremata) – סדרה עתיקה של יונקים ששרדו מתקופת הדינוזאורים. הוא מערער את ההגדרה הקלאסית של מה הופך חיה ל"יונק".</p>
+            </div>
+
+            <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800 mt-6">
+                <h3 class="text-2xl font-bold text-blue-300 mb-6">מאפיינים ביולוגיים בלתי נתפסים</h3>
+                <ul class="list-disc list-inside space-y-4 text-lg">
+                    <li><strong>מטיל ביצים:</strong> בניגוד לרוב המוחלט של היונקים, הברווזן אינו ממליט גורים חיים, אלא מטיל ביצים (בדומה לזוחלים ולעופות).</li>
+                    <li><strong>מניק ללא פטמות:</strong> לברווזנית אין פטמות. החלב פשוט מופרש דרך נקבוביות העור בבטנה, והגורים מלקקים אותו מהפרווה שלה כאילו היא מזיעה חלב.</li>
+                    <li><strong>יונק ארסי:</strong> תופעה נדירה ביותר בקרב יונקים. לזכרים יש דורבן חלול דמוי קרן בקרסול רגלם האחורית, המחובר לבלוטת ארס. הארס אינו קטלני לבני אדם, אך גורם לכאב מייסר ומשתק שיכול להימשך חודשים, ומשמש אותם בעיקר לקרבות על טריטוריה.</li>
+                    <li><strong>קולטני חשמל (Electroreception):</strong> כשהברווזן צולל למים, הוא עוצם את עיניו, אוזניו ונחיריו לחלוטין. כיצד הוא צד? המקור שלו מרושת בעשרות אלפי קולטנים חשמליים שמזהים את הפולסים החשמליים הזעירים שנוצרים מתנועת השרירים של סרטנים וחרקי מים!</li>
+                    <li><strong>פרווה זוהרת:</strong> בשנת 2020 גילו מדענים תגלית מדהימה נוספת – תחת תאורת אולטרה-סגול (UV), הפרווה של הברווזן פולטת אור ביו-פלואורסצנטי וזוהרת בצבע ירוק-כחלחל!</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- גלריית תמונות עם נתיבים מקומיים לתיקיית images שבתוך animals -->
+        <section class="mb-14">
+            <h2 class="text-3xl font-bold text-white mb-8">תיעוד חזותי (לחץ להגדלה)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- תמונה 1 (מיתוס/מתיחה) -->
+                <div class="relative group">
+                    <img src="images/platypus-myth.jpg" 
+                         alt="איור קלאסי של חדר עבודה בו חוקר מנסה לחתוך פוחלץ מזויף" 
+                         class="rounded-2xl cursor-pointer hover:opacity-75 transition duration-300 object-cover h-80 w-full shadow-2xl border border-gray-800"
+                         onclick="openLightbox(this.src, this.alt)">
+                    <p class="absolute bottom-0 bg-black/70 text-white w-full text-center py-2 rounded-b-2xl">המיתוס: "מתיחת הפוחלץ של המלחים"</p>
+                </div>
+                     
+                <!-- תמונה 2 (מציאות) -->
+                <div class="relative group">
+                    <img src="images/platypus-real.jpg" 
+                         alt="ברווזן אמיתי שוחה בנהר אוסטרלי צלול" 
+                         class="rounded-2xl cursor-pointer hover:opacity-75 transition duration-300 object-cover h-80 w-full shadow-2xl border border-gray-800"
+                         onclick="openLightbox(this.src, this.alt)">
+                    <p class="absolute bottom-0 bg-black/70 text-white w-full text-center py-2 rounded-b-2xl">המציאות: פלא האבולוציה</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800 mt-auto">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400 text-lg space-y-2">
+            <p><strong class="text-white">יוצרי האתר והמחקר:</strong> רם והבינה המלאכותית (יעל, מדענית וזואולוגית).</p>
+            <p><strong class="text-white">שנת יצירה:</strong> 2026</p>
+            <p><strong class="text-white">מטרת הבנייה:</strong> מחקר מעמיק החוקר את התפר שבין פולקלור, מיתולוגיה למציאות זואולוגית.</p>
+        </div>
+    </footer>
+
+    <!-- מנגנון החלון הצף (Lightbox) -->
+    <div id="lightbox" class="fixed inset-0 bg-gray-950/95 z-50 justify-center items-center p-6 cursor-pointer" onclick="closeLightbox()">
+        <div class="relative max-w-full max-h-full">
+            <button class="absolute -top-16 right-0 text-white text-5xl hover:text-red-500 font-bold transition">&times;</button>
+            <img id="lightbox-img" src="" alt="" class="max-h-[80vh] max-w-full object-contain rounded-2xl border-4 border-gray-700 shadow-2xl">
+            <p id="lightbox-caption" class="text-center text-cyan-300 text-2xl mt-6 font-medium"></p>
+        </div>
+    </div>
+
+    <script>
+        function openLightbox(src, alt) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').textContent = alt;
+            document.getElementById('lightbox').classList.add('active');
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
+
