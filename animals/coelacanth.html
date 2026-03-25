@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הצילקנת - מאגדה למציאות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap');
+        body { font-family: 'Heebo', sans-serif; }
+        #lightbox { display: none; }
+        #lightbox.active { display: flex; }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col">
+
+    <!-- תפריט ניווט -->
+    <nav class="bg-gray-900 border-b border-gray-800 p-5 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center max-w-5xl">
+            <a href="../index.html" class="text-xl font-bold text-gray-400 hover:text-white transition">← חזרה לראשי</a>
+            <span class="text-2xl font-black text-blue-400">מחקר: הצילקנת (Coelacanth)</span>
+        </div>
+    </nav>
+
+    <main class="flex-grow container mx-auto px-6 py-10 max-w-4xl">
+        
+        <header class="mb-12 border-b border-gray-800 pb-10">
+            <h1 class="text-5xl md:text-7xl font-black mb-6 text-white leading-tight">הצילקנת</h1>
+            <p class="text-3xl text-indigo-400 font-medium">המאובן החי שחזר מהכחדה של 66 מיליון שנה</p>
+        </header>
+
+        <!-- מחקר אטימולוגי נרחב -->
+        <section class="mb-14 bg-gray-900 p-8 rounded-3xl border border-gray-700 shadow-2xl">
+            <h2 class="text-4xl font-black mb-8 text-blue-400 border-b border-gray-700 pb-4">מחקר אטימולוגי: מקור השמות</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800">
+                    <h3 class="text-2xl font-bold text-indigo-300 mb-4">השם המדעי הטקסונומי: Latimeria chalumnae</h3>
+                    <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                        השם המדעי של המין שהתגלה ב-1938 הוא מחווה היסטורית כפולה - למגלה האמיצה ולמקום התגלית:
+                    </p>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start">
+                            <span class="text-indigo-400 font-bold ml-3 text-xl w-36 shrink-0">Latimeria:</span>
+                            <span class="text-gray-300">שם הסוג הוענק כמחווה למרג'ורי קורטני-לטימר (Marjorie Courtenay-Latimer, 1907–2004), אוצרת המוזיאון הצעירה שזיהתה את הדג המוזר בתוך ערימת שלל דיג והצילה אותו למען המדע.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-indigo-400 font-bold ml-3 text-xl w-36 shrink-0">chalumnae:</span>
+                            <span class="text-gray-300">שם המין מתייחס לנהר חלומנה (Chalumna River) שבאוקיינוס ההודי, מול חופי דרום אפריקה, שם נלכד הפרט החי הראשון.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-4">שם הסדרה (והשם הנפוץ): Coelacanth</h3>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start">
+                            <span class="text-blue-400 font-bold ml-3 text-xl w-36 shrink-0">Koilos (יוונית):</span>
+                            <span class="text-gray-300">פירושו "נבוב" או "חלול".</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-400 font-bold ml-3 text-xl w-36 shrink-0">Akantha (יוונית):</span>
+                            <span class="text-gray-300">פירושו "עוקץ", "קוץ" או "עמוד שדרה".</span>
+                        </li>
+                    </ul>
+                    <p class="mt-4 text-xl font-bold text-white bg-gray-900 inline-block p-3 rounded-lg">משמעות כוללת: "בעל עמוד השדרה החלול".</p>
+                </div>
+                
+                <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800">
+                    <h3 class="text-2xl font-bold text-emerald-400 mb-4">השם הפולקלוריסטי (קומורו): Gombessa</h3>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start">
+                            <span class="text-emerald-400 font-bold ml-3 text-xl w-36 shrink-0">גומבסה:</span>
+                            <span class="text-gray-300">אמנם המדע האירופאי נדהם ב-1938, אך דייגי איי קומורו הכירו את הדג הזה מאז ומעולם. הם כינו אותו "גומבסה" (דג חסר ערך), מכיוון שבשרו מכיל שעווה ושומנים המקשים מאוד על עיכולו, והוא לא ראוי למאכל.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- תגלית היסטורית -->
+        <section class="mb-14 bg-gray-900/50 p-8 rounded-3xl space-y-8 text-xl text-gray-300 leading-relaxed">
+            <div>
+                <h2 class="text-3xl font-bold text-white mb-4">תגלית המאה: פגישה עם רוח רפאים מהעבר</h2>
+                <p>עד שנת 1938, הקהילה המדעית קבעה נחרצות: הצילקנתים נכחדו בסוף תור הקרטיקון, לפני 66 מיליון שנה, יחד עם הדינוזאורים. הם הוכרו רק כמאובנים המוטבעים בסלעים קדומים.</p>
+                <p class="mt-4">
+                    ב-<strong>22 בדצמבר 1938</strong>, קפטן ספינת דיג בשם הנדריק גוסן (Hendrik Goosen) חזר לנמל בדרום אפריקה. הוא קרא לאוצרת המוזיאון המקומית, <strong>מרג'ורי קורטני-לטימר</strong>, לראות דג כחול ויפהפה ומוזר שנתפס ברשתותיו. לטימר, שמעולם לא ראתה דבר כזה, שלחה איור מפורט של הדג לכימאי והאיכתיולוג המפורסם <strong>פרופ' ג'יי. אל. בי. סמית' (J.L.B. Smith, 1892–1968)</strong>. כשסמית' ראה את האיור, הוא תיאר את הרגע מאוחר יותר: <em>"לא הייתי מופתע יותר אילו הייתי רואה דינוזאור הולך ברחוב"</em>. תגלית "המאובן החי" הסעירה את עולם המדע מקצה לקצה.
+                </p>
+            </div>
+        </section>
+
+        <!-- מיתוס לעומת מציאות והבדלים ביולוגיים -->
+        <section class="mb-14 space-y-8 text-xl text-gray-300 leading-relaxed">
+            <div class="border-t border-gray-700 pt-8">
+                <h2 class="text-3xl font-bold text-white mb-4">המיתוס המדעי מול המציאות האבולוציונית</h2>
+                <p><strong>המיתוס:</strong> במקרה זה, הפולקלור לא היה אגדת ילידים, אלא ה"דוגמה" המדעית הנוקשה שהניחה שמין לא יכול לשרוד בסתר 66 מיליון שנה מבלי להשאיר אף מאובן מתקופות מאוחרות יותר.</p>
+                <p class="mt-4"><strong>המציאות:</strong> הצילקנת שרד במעמקי האוקיינוס (בעומקים של כ-200 מטרים), באזורים יציבים גיאולוגית (מערות תת-ימיות), שם הסביבה כמעט לא השתנתה מאז עידן הדינוזאורים.</p>
+            </div>
+
+            <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800 mt-6">
+                <h3 class="text-2xl font-bold text-blue-300 mb-6">מאפיינים ביולוגיים: החוליה המקשרת</h3>
+                <ul class="list-disc list-inside space-y-4 text-lg">
+                    <li><strong>סנפירים בשרניים (Lobe-finned):</strong> שלא כמו דגים רגילים בעלי סנפירי קרניים, לצילקנת יש סנפירים המחוברים לגוף על ידי גבעולים בשרניים ושריריים בעלי מבנה עצמות דומה לרגליים של בעלי ארבע רגליים (טטרפודים). הם נעים במים בתנועה המזכירה סוס דוהר!</li>
+                    <li><strong>מפרק גולגולת ייחודי:</strong> הוא היצור החי היחיד בעל מפרק תוך-גולגולתי המאפשר לו להרים באופן עצמאי לחלוטין את חלקה העליון של הגולגולת (ולא רק לפתוח את הלסת התחתונה) כדי לשאוב טרף.</li>
+                    <li><strong>מיתר הגב (Notochord):</strong> במקום עמוד שדרה מלא עשוי עצם, יש לו צינור חלול עשוי סחוס ומלא בנוזל (מכאן שמו האטימולוגי).</li>
+                    <li><strong>איבר רוסטרלי:</strong> איבר חישה אלקטרומגנטי הנמצא בחרטומו, המסייע לו לאתר חתימות חשמליות של טרף בחשכה המוחלטת של מערות המעמקים.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- גלריית תמונות עם נתיבים מקומיים לתיקיית images שבתוך animals -->
+        <section class="mb-14">
+            <h2 class="text-3xl font-bold text-white mb-8">תיעוד חזותי (לחץ להגדלה)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- תמונה 1 (המיתוס המדעי/מאובן) -->
+                <div class="relative group">
+                    <img src="images/coelacanth-myth.jpg" 
+                         alt="מאובן עתיק של צילקנת מוטבע בסלע מתקופת הדינוזאורים" 
+                         class="rounded-2xl cursor-pointer hover:opacity-75 transition duration-300 object-cover h-80 w-full shadow-2xl border border-gray-800"
+                         onclick="openLightbox(this.src, this.alt)">
+                    <p class="absolute bottom-0 bg-black/70 text-white w-full text-center py-2 rounded-b-2xl">המיתוס המדעי: הכחדה (מאובן בלבד)</p>
+                </div>
+                     
+                <!-- תמונה 2 (מציאות) -->
+                <div class="relative group">
+                    <img src="images/coelacanth-real.jpg" 
+                         alt="צילקנת כחול מציאותי שוחה במערת מעמקים" 
+                         class="rounded-2xl cursor-pointer hover:opacity-75 transition duration-300 object-cover h-80 w-full shadow-2xl border border-gray-800"
+                         onclick="openLightbox(this.src, this.alt)">
+                    <p class="absolute bottom-0 bg-black/70 text-white w-full text-center py-2 rounded-b-2xl">המציאות: "מאובן חי" במעמקים</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800 mt-auto">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400 text-lg space-y-2">
+            <p><strong class="text-white">יוצרי האתר והמחקר:</strong> רם והבינה המלאכותית (יעל, מדענית וזואולוגית).</p>
+            <p><strong class="text-white">שנת יצירה:</strong> 2026</p>
+            <p><strong class="text-white">מטרת הבנייה:</strong> מחקר מעמיק החוקר את התפר שבין פולקלור, מיתולוגיה למציאות זואולוגית.</p>
+        </div>
+    </footer>
+
+    <!-- מנגנון החלון הצף (Lightbox) -->
+    <div id="lightbox" class="fixed inset-0 bg-gray-950/95 z-50 justify-center items-center p-6 cursor-pointer" onclick="closeLightbox()">
+        <div class="relative max-w-full max-h-full">
+            <button class="absolute -top-16 right-0 text-white text-5xl hover:text-red-500 font-bold transition">&times;</button>
+            <img id="lightbox-img" src="" alt="" class="max-h-[80vh] max-w-full object-contain rounded-2xl border-4 border-gray-700 shadow-2xl">
+            <p id="lightbox-caption" class="text-center text-indigo-300 text-2xl mt-6 font-medium"></p>
+        </div>
+    </div>
+
+    <script>
+        function openLightbox(src, alt) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').textContent = alt;
+            document.getElementById('lightbox').classList.add('active');
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
+
