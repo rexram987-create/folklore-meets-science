@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>גורילת ההרים - מאגדה למציאות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap');
+        body { font-family: 'Heebo', sans-serif; }
+        #lightbox { display: none; }
+        #lightbox.active { display: flex; }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col">
+
+    <!-- תפריט ניווט -->
+    <nav class="bg-gray-900 border-b border-gray-800 p-5 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center max-w-5xl">
+            <a href="../index.html" class="text-xl font-bold text-gray-400 hover:text-white transition">← חזרה לראשי</a>
+            <span class="text-2xl font-black text-blue-400">מחקר: גורילת ההרים</span>
+        </div>
+    </nav>
+
+    <main class="flex-grow container mx-auto px-6 py-10 max-w-4xl">
+        
+        <header class="mb-12 border-b border-gray-800 pb-10">
+            <h1 class="text-5xl md:text-7xl font-black mb-6 text-white leading-tight">גורילת ההרים</h1>
+            <p class="text-3xl text-emerald-400 font-medium">ממפלצת האדם-קוף האכזרית אל הענק העדין</p>
+        </header>
+
+        <!-- מחקר אטימולוגי נרחב -->
+        <section class="mb-14 bg-gray-900 p-8 rounded-3xl border border-gray-700 shadow-2xl">
+            <h2 class="text-4xl font-black mb-8 text-blue-400 border-b border-gray-700 pb-4">מחקר אטימולוגי: מקור השמות</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800">
+                    <h3 class="text-2xl font-bold text-emerald-300 mb-4">השם המדעי הטקסונומי: Gorilla beringei beringei</h3>
+                    <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                        השם מורכב משילוב של היסטוריה עתיקה (יוון/קרתגו) ומחווה מודרנית למגלה המין:
+                    </p>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start">
+                            <span class="text-emerald-400 font-bold ml-3 text-xl w-32 shrink-0">Gorilla:</span>
+                            <span class="text-gray-300">מקורו במילה היוונית <em>Gorillai</em> (Γόριλλαι), שפירושה "שבט של נשים שעירות". השם תועד לראשונה על ידי חנון הנווט, חוקר קרתגי במאה ה-5 לפנה"ס, שסייר בחופי מערב אפריקה ונתקל ביצורים שעירים דמויי אדם.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-emerald-400 font-bold ml-3 text-xl w-32 shrink-0">beringei:</span>
+                            <span class="text-gray-300">שם המין ותת-המין, הניתן כמחווה ישירה לסרן רוברט פון ברינגה, שהיה הראשון לזהות ולתעד מדעית את גורילת ההרים.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- תגלית היסטורית -->
+        <section class="mb-14 bg-gray-900/50 p-8 rounded-3xl space-y-8 text-xl text-gray-300 leading-relaxed">
+            <div>
+                <h2 class="text-3xl font-bold text-white mb-4">המגלה והגילוי המדעי</h2>
+                <p>עד תחילת המאה ה-20, סיפורים על קופי-אדם ענקיים החיים על פסגות הרי הגעש נחשבו לאגדות עם של ילידים. המפנה התרחש ב-<strong>17 באוקטובר 1902</strong>.</p>
+                <p class="mt-4">
+                    סרן <strong class="text-emerald-300">רוברט פון ברינגה (Robert von Beringe, 1865–1940)</strong>, קצין גרמני שפיקד על כוח באזור מזרח אפריקה (כיום רואנדה, אוגנדה והרפובליקה הדמוקרטית של קונגו), הוביל משלחת לחקר הרי הגעש וירונגה. במהלך טיפוס בגובה 3,100 מטרים, משלחתו נתקלה בלהקה של קופי אדם ענקיים ושעירים במיוחד, שלא היו מוכרים למדע. פון ברינגה שלח פוחלץ של אחד הפרטים למוזיאון הזואולוגי בברלין, שם פרופסור פול מאצ'י אישר כי מדובר בתת-מין חדש לחלוטין.
+                </p>
+            </div>
+        </section>
+
+        <!-- מיתוס לעומת מציאות והבדלים ביולוגיים -->
+        <section class="mb-14 space-y-8 text-xl text-gray-300 leading-relaxed">
+            <div class="border-t border-gray-700 pt-8">
+                <h2 class="text-3xl font-bold text-white mb-4">המיתוס מול המציאות</h2>
+                <p><strong>האגדה:</strong> ילידים וחוקרים אירופאים מוקדמים תיארו מפלצות צמאות דם, חצי-אדם חצי-חיה, שחוטפות נשים ויכולות לקרוע בני אדם לגזרים (מיתוס שהוליד מאוחר יותר את דמותו של קינג קונג).</p>
+                <p class="mt-4"><strong>המציאות:</strong> זואולוגים (כמו דיאן פוסי שנים מאוחר יותר) גילו שגורילות ההרים הן חיות צמחוניות, שלוות, וביישניות ביותר, המקיימות חיי משפחה עשירים ומורכבים. הן יתקפו רק אם יחושו סכנה מיידית למשפחתן.</p>
+            </div>
+
+            <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800 mt-6">
+                <h3 class="text-2xl font-bold text-blue-300 mb-6">זואולוגיה: הבדלים בין זכר לנקבה (דו-צורתיות זוויגית)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2 border-b border-gray-700 pb-2">זכר דומיננטי (כסוף-גב / Silverback)</h4>
+                        <ul class="list-disc list-inside space-y-2 mt-4 text-lg">
+                            <li><strong>משקל:</strong> 160 עד 200 ק"ג (ואף יותר).</li>
+                            <li><strong>גובה:</strong> כ-1.70 מטרים (כשהוא עומד על שתיים).</li>
+                            <li><strong>מאפיינים:</strong> פס שיער כסוף/לבן בולט על הגב והירכיים המופיע עם הבגרות.</li>
+                            <li><strong>מבנה גולגולת:</strong> רכס עצם בולט מאוד (Sagittal crest) בקדקוד הגולגולת, המספק עיגון לשרירי הלסת העצומים שלהם ומעניק לראש צורת חרוט.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2 border-b border-gray-700 pb-2">נקבה</h4>
+                        <ul class="list-disc list-inside space-y-2 mt-4 text-lg">
+                            <li><strong>משקל:</strong> 90 עד 100 ק"ג (כחצי ממשקל הזכר).</li>
+                            <li><strong>גובה:</strong> כ-1.50 מטרים.</li>
+                            <li><strong>מאפיינים:</strong> שיער כהה ואחיד ללא הפס הכסוף.</li>
+                            <li><strong>מבנה גולגולת:</strong> מעוגל יותר, ללא רכס העצם הבולט, מה שמקנה לפנים מראה עדין יותר בהשוואה לזכר.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- גלריית תמונות -->
+        <section class="mb-14">
+            <h2 class="text-3xl font-bold text-white mb-8">תיעוד חזותי (לחץ להגדלה)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- תמונה 1 (מיתוס) -->
+                <div class="relative group">
+                    <img src="images/gorilla-myth.jpg" 
+                         alt="איור פולקלור של מפלצת אדם-קוף מאיימת" 
+                         class="rounded-2xl cursor-pointer hover:opacity-75 transition duration-300 object-cover h-80 w-full shadow-2xl border border-gray-800"
+                         onclick="openLightbox(this.src, this.alt)">
+                    <p class="absolute bottom-0 bg-black/70 text-white w-full text-center py-2 rounded-b-2xl">המיתוס: "מפלצת האדם-קוף"</p>
+                </div>
+                     
+                <!-- תמונה 2 (מציאות) -->
+                <div class="relative group">
+                    <img src="images/gorilla-real.jpg" 
+                         alt="זכר כסוף-גב עוצמתי ועדין בסביבתו הטבעית" 
+                         class="rounded-2xl cursor-pointer hover:opacity-75 transition duration-300 object-cover h-80 w-full shadow-2xl border border-gray-800"
+                         onclick="openLightbox(this.src, this.alt)">
+                    <p class="absolute bottom-0 bg-black/70 text-white w-full text-center py-2 rounded-b-2xl">המציאות: כסוף-גב בהרי וירונגה</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800 mt-auto">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400 text-lg space-y-2">
+            <p><strong class="text-white">יוצרי האתר והמחקר:</strong> רם והבינה המלאכותית (יעל).</p>
+            <p><strong class="text-white">שנת יצירה:</strong> 2026</p>
+            <p><strong class="text-white">מטרת הבנייה:</strong> מחקר מעמיק החוקר את התפר שבין פולקלור, מיתולוגיה למציאות זואולוגית.</p>
+        </div>
+    </footer>
+
+    <!-- מנגנון החלון הצף (Lightbox) -->
+    <div id="lightbox" class="fixed inset-0 bg-gray-950/95 z-50 justify-center items-center p-6 cursor-pointer" onclick="closeLightbox()">
+        <div class="relative max-w-full max-h-full">
+            <button class="absolute -top-16 right-0 text-white text-5xl hover:text-red-500 font-bold transition">&times;</button>
+            <img id="lightbox-img" src="" alt="" class="max-h-[80vh] max-w-full object-contain rounded-2xl border-4 border-gray-700 shadow-2xl">
+            <p id="lightbox-caption" class="text-center text-emerald-300 text-2xl mt-6 font-medium"></p>
+        </div>
+    </div>
+
+    <script>
+        function openLightbox(src, alt) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').textContent = alt;
+            document.getElementById('lightbox').classList.add('active');
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
