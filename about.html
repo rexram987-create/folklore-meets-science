@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אודות הפרויקט</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap');
+        body { font-family: 'Heebo', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col">
+
+    <nav class="bg-gray-900 border-b border-gray-800 p-4 shadow-lg sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center max-w-5xl">
+            <a href="index.html" class="text-2xl font-black text-blue-400 tracking-wider">אגדה.מציאות</a>
+            <div class="flex gap-6">
+                <a href="index.html" class="text-lg font-medium hover:text-blue-400 transition">ראשי</a>
+                <a href="about.html" class="text-lg font-medium text-blue-400">אודות</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow container mx-auto px-4 py-16 max-w-3xl text-center">
+        
+        <div class="mb-10 inline-block p-2 bg-gray-800 rounded-full border-4 border-gray-700 shadow-2xl">
+            <div class="w-48 h-48 rounded-full bg-gray-700 overflow-hidden flex items-center justify-center text-gray-500 text-lg">
+                <img src="images/ram-profile.jpg" alt="רם" class="w-full h-full object-cover" onerror="this.style.display='none'">
+                <span class="absolute">תמונה של רם</span>
+            </div>
+        </div>
+
+        <h1 class="text-4xl md:text-5xl font-black mb-6 text-white">אודות הפרויקט</h1>
+        
+        <div class="bg-gray-900 p-8 rounded-3xl border border-gray-800 shadow-xl text-lg text-gray-300 leading-relaxed space-y-6 text-right">
+            <p>
+                ברוכים הבאים לאתר שחוקר את התפר שבין אגדות עמים למדע מדויק. האתר נוצר מתוך אהבה להיסטוריה, בעלי חיים והסיפורים האנושיים שליוו את גילוי העולם.
+            </p>
+            <p>
+                הפרויקט הזה מוקדש למחקר מעמיק, משורשי השמות (אטימולוגיה) של מפלצות האתמול ועד לטקסונומיה המדעית של חיות הפלא שהתגלו במציאות – מהמעמקים החשוכים ביותר של האוקיינוס ועד לג'ונגלים הסבוכים ביותר.
+            </p>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800 mt-auto">
+        <div class="container mx-auto px-4 py-6 text-center text-gray-400 text-lg">
+            <p>אתר זה נבנה ופותח בשיתוף פעולה במחקר משותף על ידי <span class="text-blue-400 font-bold">רם</span> והבינה המלאכותית.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
