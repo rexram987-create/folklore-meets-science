@@ -8,47 +8,74 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap');
         body { font-family: 'Heebo', sans-serif; }
+        /* הוספתי את קוד ה-CSS של החלון הצף לכאן */
+        #lightbox { display: none; }
+        #lightbox.active { display: flex; }
     </style>
 </head>
 <body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col">
 
-    <nav class="bg-gray-900 border-b border-gray-800 p-4 shadow-lg sticky top-0 z-10">
-        <div class="container mx-auto flex justify-between items-center max-w-5xl">
-            <a href="index.html" class="text-2xl font-black text-blue-400 tracking-wider">אגדה.מציאות</a>
-            <div class="flex gap-6">
-                <a href="index.html" class="text-lg font-medium hover:text-blue-400 transition">ראשי</a>
-                <a href="about.html" class="text-lg font-medium text-blue-400">אודות</a>
+    <nav class="bg-gray-900 border-b border-gray-800 p-5 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center max-w-6xl">
+            <a href="index.html" class="text-3xl font-black text-blue-400 tracking-wider">אגדה.מציאות</a>
+            <div class="flex gap-8">
+                <a href="index.html" class="text-xl font-medium hover:text-blue-400 transition">ראשי</a>
+                <a href="about.html" class="text-xl font-medium text-blue-400 border-b-2 border-blue-400 pb-1">אודות</a>
             </div>
         </div>
     </nav>
 
-    <main class="flex-grow container mx-auto px-4 py-16 max-w-3xl text-center">
+    <main class="flex-grow container mx-auto px-6 py-16 max-w-4xl text-center">
         
-        <div class="mb-10 inline-block p-2 bg-gray-800 rounded-full border-4 border-gray-700 shadow-2xl">
-            <div class="w-48 h-48 rounded-full bg-gray-700 overflow-hidden flex items-center justify-center text-gray-500 text-lg">
-                <img src="images/ram-profile.jpg" alt="רם" class="w-full h-full object-cover" onerror="this.style.display='none'">
-                <span class="absolute">תמונה של רם</span>
+        <!-- התמונה שלך - עכשיו לחיצה ופותחת חלון צף (מותאם ל-S25 Ultra) -->
+        <div class="mb-12 inline-block p-2 bg-gray-800 rounded-full border-4 border-gray-700 shadow-2xl relative group cursor-pointer" onclick="openLightbox('images/ram-profile.jpg', 'רם - חוקר זואולוגיה ופולקלור')">
+            <div class="w-56 h-56 rounded-full bg-gray-700 overflow-hidden flex items-center justify-center text-gray-500 text-xl font-medium">
+                <img src="images/ram-profile.jpg" alt="רם" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.style.display='none'">
+                <span class="absolute pointer-events-none">תמונת הפרופיל של רם</span>
+            </div>
+            <div class="absolute inset-0 bg-black/40 rounded-full opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                <span class="text-white font-bold drop-shadow-md">לחץ להגדלה</span>
             </div>
         </div>
 
-        <h1 class="text-4xl md:text-5xl font-black mb-6 text-white">אודות הפרויקט</h1>
+        <h1 class="text-5xl md:text-6xl font-black mb-8 text-white">אודות המחקר</h1>
         
-        <div class="bg-gray-900 p-8 rounded-3xl border border-gray-800 shadow-xl text-lg text-gray-300 leading-relaxed space-y-6 text-right">
+        <div class="bg-gray-900 p-10 rounded-3xl border border-gray-800 shadow-2xl text-xl text-gray-300 leading-relaxed space-y-6 text-right">
             <p>
-                ברוכים הבאים לאתר שחוקר את התפר שבין אגדות עמים למדע מדויק. האתר נוצר מתוך אהבה להיסטוריה, בעלי חיים והסיפורים האנושיים שליוו את גילוי העולם.
+                ברוכים הבאים לאתר ולמאגר המידע שחוקר את התפר העדין והמרתק שבין אגדות עמים למדע מדויק. האתר נוצר מתוך אהבה עמוקה להיסטוריה, לזואולוגיה ולסיפורים האנושיים שליוו את גילוי העולם.
             </p>
             <p>
-                הפרויקט הזה מוקדש למחקר מעמיק, משורשי השמות (אטימולוגיה) של מפלצות האתמול ועד לטקסונומיה המדעית של חיות הפלא שהתגלו במציאות – מהמעמקים החשוכים ביותר של האוקיינוס ועד לג'ונגלים הסבוכים ביותר.
+                כשהמדע פוגש את המיתוס, לרוב המציאות מתבררת כמופלאה לא פחות. הפרויקט הזה מוקדש למחקר מעמיק – החל מפירוק והבנת שורשי השמות (אטימולוגיה) של מפלצות האתמול, ועד להבנה המדעית והטקסונומית של חיות הפלא שהתגלו במציאות; ממעמקי האוקיינוס החשוכים ביותר ועד לג'ונגלים הסבוכים ביותר.
             </p>
         </div>
-
     </main>
 
     <footer class="bg-gray-900 border-t border-gray-800 mt-auto">
-        <div class="container mx-auto px-4 py-6 text-center text-gray-400 text-lg">
-            <p>אתר זה נבנה ופותח בשיתוף פעולה במחקר משותף על ידי <span class="text-blue-400 font-bold">רם</span> והבינה המלאכותית.</p>
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400 text-lg space-y-2">
+            <p><strong class="text-white">יוצרי האתר והמחקר:</strong> רם והבינה המלאכותית (יעל).</p>
+            <p><strong class="text-white">שנת יצירה:</strong> 2026</p>
+            <p><strong class="text-white">מטרת הבנייה:</strong> מחקר מעמיק החוקר את התפר שבין פולקלור, מיתולוגיה למציאות זואולוגית.</p>
         </div>
     </footer>
 
+    <!-- מנגנון החלון הצף (Lightbox) שהוספתי לדף האודות -->
+    <div id="lightbox" class="fixed inset-0 bg-gray-950/95 z-50 justify-center items-center p-6 cursor-pointer" onclick="closeLightbox()">
+        <div class="relative max-w-full max-h-full">
+            <button class="absolute -top-16 right-0 text-white text-5xl hover:text-red-500 font-bold transition">&times;</button>
+            <img id="lightbox-img" src="" alt="" class="max-h-[80vh] max-w-full object-contain rounded-2xl border-4 border-gray-700 shadow-2xl">
+            <p id="lightbox-caption" class="text-center text-blue-300 text-2xl mt-6 font-medium"></p>
+        </div>
+    </div>
+
+    <script>
+        function openLightbox(src, alt) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').textContent = alt;
+            document.getElementById('lightbox').classList.add('active');
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    </script>
 </body>
 </html>
