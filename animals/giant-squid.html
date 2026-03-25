@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הדיונון הענק (הקראקן) - מאגדה למציאות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap');
+        body { font-family: 'Heebo', sans-serif; }
+        #lightbox { display: none; }
+        #lightbox.active { display: flex; }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col">
+
+    <!-- תפריט ניווט (ללא הידבקות) -->
+    <nav class="bg-gray-900 border-b border-gray-800 p-5 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center max-w-5xl">
+            <a href="index.html" class="text-xl font-bold text-gray-400 hover:text-white transition">← חזרה לראשי</a>
+            <span class="text-2xl font-black text-blue-400">מחקר: הדיונון הענק</span>
+        </div>
+    </nav>
+
+    <main class="flex-grow container mx-auto px-6 py-10 max-w-4xl">
+        
+        <header class="mb-12 border-b border-gray-800 pb-10">
+            <h1 class="text-5xl md:text-7xl font-black mb-6 text-white leading-tight">הדיונון הענק</h1>
+            <p class="text-3xl text-blue-400 font-medium">מהקראקן המיתולוגי למפלצת המעמקים המדעית</p>
+        </header>
+
+        <!-- מחקר אטימולוגי נרחב (לפי הנחיות) -->
+        <section class="mb-14 bg-gray-900 p-8 rounded-3xl border border-gray-700 shadow-2xl">
+            <h2 class="text-4xl font-black mb-8 text-emerald-400 border-b border-gray-700 pb-4">מחקר אטימולוגי: מקור השמות</h2>
+            
+            <div class="space-y-8">
+                <!-- חלק 1: השם המדעי -->
+                <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800">
+                    <h3 class="text-2xl font-bold text-blue-300 mb-4">השם המדעי הטקסונומי: Architeuthis dux</h3>
+                    <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                        השם המדעי מורכב משלושה חלקים נפרדים המגיעים מיוונית עתיקה ומלטינית, שנועדו להמחיש את גודלו ועליונותו של היצור:
+                    </p>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start">
+                            <span class="text-emerald-400 font-bold ml-3 text-xl w-32 shrink-0">Archi (יוונית):</span>
+                            <span class="text-gray-300">קידומת שמשמעותה "ראשי", "ראשון במעלה", "גדול" או "שליט" (כמו בארכיבישוף או ארכיטקט).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-emerald-400 font-bold ml-3 text-xl w-32 shrink-0">teuthis (יוונית):</span>
+                            <span class="text-gray-300">המונח היווני העתיק ל"דיונון".</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-emerald-400 font-bold ml-3 text-xl w-32 shrink-0">dux (לטינית):</span>
+                            <span class="text-gray-300">התוספת של שם המין. פירושה "מנהיג", "מצביא" או "דוכס".</span>
+                        </li>
+                    </ul>
+                    <p class="mt-4 text-xl font-bold text-white bg-gray-900 inline-block p-3 rounded-lg">משמעות כוללת: "דיונון-העל המנהיג".</p>
+                </div>
+
+                <!-- חלק 2: השם המיתולוגי -->
+                <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800">
+                    <h3 class="text-2xl font-bold text-red-400 mb-4">השם הפולקלוריסטי: Kraken (קראקן)</h3>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start">
+                            <span class="text-red-400 font-bold ml-3 text-xl w-32 shrink-0">Krake (נורדית):</span>
+                            <span class="text-gray-300">מקור השם הוא בשפות הסקנדינביות העתיקות (נורווגית ושוודית). המילה מתארת חיה חולנית ומעוותת, או משהו עקום ומסובך (כמו שורשי עץ חשופים ומתפתלים – הדימוי המושלם לזרועות הענק הצפות על פני המים). בגרמנית מודרנית, המילה "Krake" משמעותה תמנון.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- מיתוס לעומת מציאות -->
+        <section class="mb-14 space-y-8 text-xl text-gray-300 leading-relaxed bg-gray-900/50 p-8 rounded-3xl">
+            <div>
+                <h2 class="text-3xl font-bold text-white mb-4">המיתוס: אימה בלב ים</h2>
+                <p>במשך מאות שנים, מלחים נורדיים חזרו עם סיפורים מסמרי שיער על "הקראקן" – מפלצת ים בגודל של אי שלם, בעלת זרועות ארוכות מספיק כדי ללפף תרנים של ספינות מלחמה ולגרור אותן למצולות הים באבחה אחת. תצפיות של שאריות זרועות עצומות שנפלטו אל החוף, או סימני צלקות על לוויתני ראשתן, רק הזינו את הפחד והאגדה.</p>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8">
+                <h2 class="text-3xl font-bold text-white mb-4">המציאות הזואולוגית</h2>
+                <p>הדיונון הענק הוא אחד מחסרי החוליות הגדולים ביותר בכדור הארץ. אורכו יכול להגיע עד ל-13 מטרים (כולל זרועות הציד הארוכות). יש לו את העיניים הגדולות ביותר בעולם החי – בגודל של צלחות אוכל גדולות – מה שמאפשר לו לקלוט חלקיקי אור זעירים בחושך המוחלט של מעמקי האוקיינוס. מדהים לחשוב שהתצפית המדעית המצולמת הראשונה של דיונון ענק חי בסביבתו הטבעית התרחשה רק בשנת 2004 על ידי חוקרים יפנים!</p>
+            </div>
+        </section>
+
+        <!-- גלריית תמונות עם יכולת הגדלה -->
+        <section class="mb-14">
+            <h2 class="text-3xl font-bold text-white mb-8">תיעוד חזותי (לחץ להגדלה)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- תמונה 1 -->
+                <div class="relative group">
+                    <img src="https://images.unsplash.com/photo-1549747514-411db1844b20?auto=format&fit=crop&q=80&w=800" 
+                         alt="איור פולקלור של הקראקן תוקף ספינה" 
+                         class="rounded-2xl cursor-pointer hover:opacity-75 transition duration-300 object-cover h-80 w-full shadow-2xl border border-gray-800"
+                         onclick="openLightbox(this.src, this.alt)">
+                    <p class="absolute bottom-0 bg-black/70 text-white w-full text-center py-2 rounded-b-2xl">המיתוס (אילוסטרציה)</p>
+                </div>
+                     
+                <!-- תמונה 2 -->
+                <div class="relative group">
+                    <img src="https://images.unsplash.com/photo-1615598695027-2c13eeb3fdb2?auto=format&fit=crop&q=80&w=800" 
+                         alt="זרועות במעמקים המייצגות את הדיונון הענק המציאותי" 
+                         class="rounded-2xl cursor-pointer hover:opacity-75 transition duration-300 object-cover h-80 w-full shadow-2xl border border-gray-800"
+                         onclick="openLightbox(this.src, this.alt)">
+                    <p class="absolute bottom-0 bg-black/70 text-white w-full text-center py-2 rounded-b-2xl">המציאות במעמקים</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- פוטר משותף (לפי הנחיות) -->
+    <footer class="bg-gray-900 border-t border-gray-800 mt-auto">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400 text-lg space-y-2">
+            <p><strong class="text-white">יוצרי האתר והמחקר:</strong> רם והבינה המלאכותית (יעל).</p>
+            <p><strong class="text-white">שנת יצירה:</strong> 2026</p>
+            <p><strong class="text-white">מטרת הבנייה:</strong> מחקר מעמיק החוקר את התפר שבין פולקלור, מיתולוגיה למציאות זואולוגית.</p>
+        </div>
+    </footer>
+
+    <!-- מנגנון החלון הצף (Lightbox) -->
+    <div id="lightbox" class="fixed inset-0 bg-gray-950/95 z-50 justify-center items-center p-6 cursor-pointer" onclick="closeLightbox()">
+        <div class="relative max-w-full max-h-full">
+            <button class="absolute -top-16 right-0 text-white text-5xl hover:text-red-500 font-bold transition">&times;</button>
+            <img id="lightbox-img" src="" alt="" class="max-h-[80vh] max-w-full object-contain rounded-2xl border-4 border-gray-700 shadow-2xl">
+            <p id="lightbox-caption" class="text-center text-blue-300 text-2xl mt-6 font-medium"></p>
+        </div>
+    </div>
+
+    <script>
+        function openLightbox(src, alt) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').textContent = alt;
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
