@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>האוקאפי - מאגדה למציאות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap');
+        body { font-family: 'Heebo', sans-serif; }
+        #lightbox { display: none; }
+        #lightbox.active { display: flex; }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col">
+
+    <nav class="bg-gray-900 border-b border-gray-800 p-5 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center max-w-5xl">
+            <a href="../index.html" class="text-xl font-bold text-gray-400 hover:text-white transition">← חזרה לראשי</a>
+            <span class="text-2xl font-black text-blue-400">מחקר: האוקאפי</span>
+        </div>
+    </nav>
+
+    <main class="flex-grow container mx-auto px-6 py-10 max-w-4xl">
+        
+        <header class="mb-12 border-b border-gray-800 pb-10">
+            <h1 class="text-5xl md:text-7xl font-black mb-6 text-white leading-tight">האוקאפי</h1>
+            <p class="text-3xl text-purple-400 font-medium">מהחד-קרן האפריקאי לשריד האחרון של קרובי הג'ירפה</p>
+        </header>
+
+        <section class="mb-14 bg-gray-900 p-8 rounded-3xl border border-gray-700 shadow-2xl">
+            <h2 class="text-4xl font-black mb-8 text-blue-400 border-b border-gray-700 pb-4">מחקר אטימולוגי: מקור השמות</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800">
+                    <h3 class="text-2xl font-bold text-purple-300 mb-4">השם המדעי הטקסונומי: Okapia johnstoni</h3>
+                    <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                        השם המדעי הוא שילוב מרתק בין השפה המקומית העתיקה של ילידי יערות קונגו לבין הוקרה לחוקר הבריטי שהוכיח את קיומו למדע:
+                    </p>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start">
+                            <span class="text-purple-400 font-bold ml-3 text-xl w-32 shrink-0">Okapia:</span>
+                            <span class="text-gray-300">נגזר מהשם המקומי <em>O'api</em> בשפת שבט הפיגמים (Mbuti) החיים ביער איטורי. מבחינתם, החיה מעולם לא הייתה מיתוס, אלא חלק מהמציאות היומיומית של היער.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-purple-400 font-bold ml-3 text-xl w-32 shrink-0">johnstoni:</span>
+                            <span class="text-gray-300">תוספת של שם המין הניתנת כמחווה לסר הארי ג'ונסטון (Sir Harry Johnston, 1858–1927), המושל הבריטי של אוגנדה, שהיה המדען הראשון שהשיג עור וגולגולת שלמים של החיה והביא אותם לאירופה.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-14 bg-gray-900/50 p-8 rounded-3xl space-y-8 text-xl text-gray-300 leading-relaxed">
+            <div>
+                <h2 class="text-3xl font-bold text-white mb-4">התגלית המדעית שזעזעה את אירופה</h2>
+                <p>בסוף המאה ה-19, החוקר המפורסם הנרי מורטון סטנלי (1841–1904) שמע מילידים על חיה דמוית-חמור יוצאת דופן שמסתתרת בעומק הג'ונגל של קונגו, אזור חשוך וסבוך שכמעט ולא נחקר. המדענים באירופה פטרו זאת כעוד אגדת פולקלור על "חד-קרן אפריקאי".</p>
+                <p class="mt-4">
+                    התפנית הגיעה בשנת <strong>1901</strong>. סר הארי ג'ונסטון, חוקר אובססיבי של חידות זואולוגיות, הצליח לחלץ קבוצה של ילידי פיגמים מידי חוטפים. כאות תודה, הם הובילו אותו אל היער והראו לו עקבות של החיה. למרות שג'ונסטון מעולם לא ראה אוקאפי חי במו עיניו, הוא הצליח לרכוש מהמקומיים חלקי עור, ובסופו של דבר גולגולת שלמה ועור מלא. כאשר אלו נשלחו ללונדון והוצגו לחברה הזואולוגית, הקהילה המדעית נדהמה: החיה האגדית הייתה אמיתית לחלוטין.
+                </p>
+            </div>
+        </section>
+
+        <section class="mb-14 space-y-8 text-xl text-gray-300 leading-relaxed">
+            <div class="border-t border-gray-700 pt-8">
+                <h2 class="text-3xl font-bold text-white mb-4">המיתוס מול המציאות הזואולוגית</h2>
+                <p><strong>האגדה ("חצי זברה, חצי סוס"):</strong> בשל הפסים הבולטים על רגליו האחוריות, החוקרים הראשונים שראו רק חלקי עור היו משוכנעים שמדובר במין חדש של זברה החיה ביער, או אולי בשריד פרהיסטורי של סוס בר שניצל מהכחדה.</p>
+                <p class="mt-4"><strong>המציאות (קרוב המשפחה של הג'ירפה):</strong> ברגע שהגולגולת נבדקה, האמת התבררה כמרתקת אף יותר – האוקאפי אינו קשור כלל לזברות או לסוסים. הוא למעשה השריד החי היחיד שנותר במשפחת הג'ירפיים, מלבד הג'ירפה עצמה!</p>
+            </div>
+
+            <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800 mt-6">
+                <h3 class="text-2xl font-bold text-blue-300 mb-6">מאפיינים ביולוגיים מרתקים</h3>
+                <ul class="list-disc list-inside space-y-4 text-lg">
+                    <li><strong>לשון ארוכה ולופתת:</strong> לאוקאפי לשון כחולה-סגולה באורך של כ-35 ס"מ. היא כל כך ארוכה שהוא יכול לנקות איתה את עיניו ואוזניו! הלשון משמשת לתלישת עלים מענפים סבוכים.</li>
+                    <li><strong>תפקיד פסי ה"זברה":</strong> הפסים הלבנים על רגליו האחוריות משמשים כהסוואה מושלמת (הם מדמים את משחקי האור והצל של השמש המסננת דרך צמרות היער), אך הם גם משמשים כמעין "סימני עקוב אחריי" ויזואליים לעופרים העוקבים אחר אימם ביער החשוך.</li>
+                    <li><strong>קרני הג'ירפה (אוסִיקוֹנִים):</strong> בדומה לג'ירפות, לזכרי האוקאפי יש שתי קרניים קצרות מכוסות עור על ראשם (נקראות Ossicones). לנקבות אין קרניים כלל, אלא רק בליטות שיער קטנות.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-14">
+            <h2 class="text-3xl font-bold text-white mb-8">תיעוד חזותי (לחץ להגדלה)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="relative group">
+                    <img src="images/okapi-myth.jpg" 
+                         alt="איור פולקלור של חד-קרן אפריקאי חצי-זברה" 
+                         class="rounded-2xl cursor-pointer hover:opacity-75 transition duration-300 object-cover h-80 w-full shadow-2xl border border-gray-800"
+                         onclick="openLightbox(this.src, this.alt)">
+                    <p class="absolute bottom-0 bg-black/70 text-white w-full text-center py-2 rounded-b-2xl">המיתוס: "זברת יער" או "חד-קרן"</p>
+                </div>
+                     
+                <div class="relative group">
+                    <img src="images/okapi-real.jpg" 
+                         alt="אוקאפי מציאותי ביער הגשם המואר חלקית" 
+                         class="rounded-2xl cursor-pointer hover:opacity-75 transition duration-300 object-cover h-80 w-full shadow-2xl border border-gray-800"
+                         onclick="openLightbox(this.src, this.alt)">
+                    <p class="absolute bottom-0 bg-black/70 text-white w-full text-center py-2 rounded-b-2xl">המציאות: קרוב המשפחה של הג'ירפה</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800 mt-auto">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400 text-lg space-y-2">
+            <p><strong class="text-white">יוצרי האתר והמחקר:</strong> רם והבינה המלאכותית (יעל, מדענית וזואולוגית).</p>
+            <p><strong class="text-white">שנת יצירה:</strong> 2026</p>
+            <p><strong class="text-white">מטרת הבנייה:</strong> מחקר מעמיק החוקר את התפר שבין פולקלור, מיתולוגיה למציאות זואולוגית.</p>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="fixed inset-0 bg-gray-950/95 z-50 justify-center items-center p-6 cursor-pointer" onclick="closeLightbox()">
+        <div class="relative max-w-full max-h-full">
+            <button class="absolute -top-16 right-0 text-white text-5xl hover:text-red-500 font-bold transition">&times;</button>
+            <img id="lightbox-img" src="" alt="" class="max-h-[80vh] max-w-full object-contain rounded-2xl border-4 border-gray-700 shadow-2xl">
+            <p id="lightbox-caption" class="text-center text-purple-300 text-2xl mt-6 font-medium"></p>
+        </div>
+    </div>
+
+    <script>
+        function openLightbox(src, alt) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').textContent = alt;
+            document.getElementById('lightbox').classList.add('active');
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
+
