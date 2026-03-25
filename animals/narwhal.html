@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הנרוול - מאגדה למציאות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap');
+        body { font-family: 'Heebo', sans-serif; }
+        #lightbox { display: none; }
+        #lightbox.active { display: flex; }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col">
+
+    <!-- תפריט ניווט -->
+    <nav class="bg-gray-900 border-b border-gray-800 p-5 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center max-w-5xl">
+            <a href="../index.html" class="text-xl font-bold text-gray-400 hover:text-white transition">← חזרה לראשי</a>
+            <span class="text-2xl font-black text-blue-400">מחקר: הנרוול (Narwhal)</span>
+        </div>
+    </nav>
+
+    <main class="flex-grow container mx-auto px-6 py-10 max-w-4xl">
+        
+        <header class="mb-12 border-b border-gray-800 pb-10">
+            <h1 class="text-5xl md:text-7xl font-black mb-6 text-white leading-tight">הנרוול</h1>
+            <p class="text-3xl text-teal-400 font-medium">מחד-הקרן הימי המיתולוגי אל לווייתן הקרח הארקטי</p>
+        </header>
+
+        <!-- מחקר אטימולוגי נרחב -->
+        <section class="mb-14 bg-gray-900 p-8 rounded-3xl border border-gray-700 shadow-2xl">
+            <h2 class="text-4xl font-black mb-8 text-blue-400 border-b border-gray-700 pb-4">מחקר אטימולוגי: מקור השמות</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800">
+                    <h3 class="text-2xl font-bold text-teal-300 mb-4">השם המדעי הטקסונומי: Monodon monoceros</h3>
+                    <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                        השם המדעי הוא שילוב של מונחים מיוונית עתיקה המדגישים את ייחודיות השן הבולטת:
+                    </p>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start">
+                            <span class="text-teal-400 font-bold ml-3 text-xl w-40 shrink-0">Monodon:</span>
+                            <span class="text-gray-300">הלחם של המילים היווניות <em>Mono</em> (יחיד/אחד) ו-<em>Odon</em> (שן). פירוש: "בעל שן אחת".</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-teal-400 font-bold ml-3 text-xl w-40 shrink-0">monoceros:</span>
+                            <span class="text-gray-300">הלחם של <em>Mono</em> (אחד) ו-<em>Ceras</em> (קרן). זהו המונח היווני המדויק ל"חד-קרן".</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800">
+                    <h3 class="text-2xl font-bold text-gray-300 mb-4">השם הנפוץ: Narwhal (נרוול)</h3>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start">
+                            <span class="text-gray-400 font-bold ml-3 text-xl w-40 shrink-0">Ná (נורדית):</span>
+                            <span class="text-gray-300">פירושה "גוויה" (Corpse).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gray-400 font-bold ml-3 text-xl w-40 shrink-0">hvalr (נורדית):</span>
+                            <span class="text-gray-300">פירושה "לווייתן".</span>
+                        </li>
+                    </ul>
+                    <p class="mt-4 text-xl font-bold text-white bg-gray-900 inline-block p-3 rounded-lg">משמעות: "לווייתן הגוויה" - בשל צבעו האפרפר המזכיר גוף של אדם שטבע.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- תגלית היסטורית -->
+        <section class="mb-14 bg-gray-900/50 p-8 rounded-3xl space-y-8 text-xl text-gray-300 leading-relaxed">
+            <div>
+                <h2 class="text-3xl font-bold text-white mb-4">ההונאה הויקינגית הגדולה</h2>
+                <p>במשך מאות שנים, סוחרים נורדים מכרו את ניבי הנרוול כ"קרני חדי-קרן" לבתי המלוכה של אירופה. המלכה <strong>אליזבת הראשונה (1533–1603)</strong> החזיקה בקרן כזו בשווי של טירה שלמה.</p>
+                <p class="mt-4">
+                    המיתוס נופץ רק בשנת <strong>1638</strong> על ידי החוקר הדני <strong>אולה וורם (Ole Worm, 1588–1654)</strong>, שהציג גולגולת נרוול מלאה והוכיח שהקרן האגדית היא למעשה שן של לווייתן.
+                </p>
+            </div>
+        </section>
+
+        <!-- מיתוס לעומת מציאות והבדלים ביולוגיים -->
+        <section class="mb-14 space-y-8 text-xl text-gray-300 leading-relaxed">
+            <div class="border-t border-gray-700 pt-8">
+                <h2 class="text-3xl font-bold text-white mb-4">המציאות הזואולוגית: חוש שישי ספירלי</h2>
+                <p><strong>האגדה:</strong> סוס פלאי בעל זנב דג וקרן קסומה שמטהרת רעלים.</p>
+                <p class="mt-4"><strong>המציאות:</strong> הניב השמאלי של הזכר צומח דרך השפה לאורך של עד 3 מטרים. זהו איבר חישה רגיש להפליא המכיל 10 מיליון קצות עצבים.</p>
+            </div>
+
+            <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800 mt-6">
+                <h3 class="text-2xl font-bold text-blue-300 mb-6">מאפיינים ביולוגיים של הניב</h3>
+                <ul class="list-disc list-inside space-y-4 text-lg">
+                    <li><strong>רדאר ביולוגי:</strong> השן חשה בשינויי מליחות, טמפרטורה ולחץ במים.</li>
+                    <li><strong>גמישות:</strong> הניב יכול להתכופף עד 30 ס"מ לכל כיוון מבלי להישבר.</li>
+                    <li><strong>דו-צורתיות:</strong> רק זכרים מפתחים את הניב הארוך (לעיתים נדירות גם נקבות).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- גלריית תמונות -->
+        <section class="mb-14">
+            <h2 class="text-3xl font-bold text-white mb-8">תיעוד חזותי (לחץ להגדלה)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- תמונה 1 (המיתוס - יצור הים המיתולוגי) -->
+                <div class="relative group">
+                    <img src="images/narwhal-myth.jpg" 
+                         alt="איור ממפה עתיקה של חד-קרן ימי: שילוב של סוס, דג וקרן ספירלית" 
+                         class="rounded-2xl cursor-pointer hover:opacity-75 transition duration-300 object-cover h-80 w-full shadow-2xl border border-gray-800"
+                         onclick="openLightbox(this.src, this.alt)">
+                    <p class="absolute bottom-0 bg-black/70 text-white w-full text-center py-2 rounded-b-2xl">המיתוס: "חד-הקרן של הים"</p>
+                </div>
+                     
+                <!-- תמונה 2 (מציאות) -->
+                <div class="relative group">
+                    <img src="images/narwhal-real.jpg" 
+                         alt="לווייתן נרוול אמיתי במימי הקוטב הקפואים" 
+                         class="rounded-2xl cursor-pointer hover:opacity-75 transition duration-300 object-cover h-80 w-full shadow-2xl border border-gray-800"
+                         onclick="openLightbox(this.src, this.alt)">
+                    <p class="absolute bottom-0 bg-black/70 text-white w-full text-center py-2 rounded-b-2xl">המציאות: לווייתן הנרוול</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800 mt-auto">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400 text-lg space-y-2">
+            <p><strong class="text-white">יוצרי האתר והמחקר:</strong> רם והבינה המלאכותית (יעל, מדענית וזואולוגית).</p>
+            <p><strong class="text-white">שנת יצירה:</strong> 2026</p>
+            <p><strong class="text-white">מטרת הבנייה:</strong> מחקר מעמיק החוקר את התפר שבין פולקלור למציאות.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="fixed inset-0 bg-gray-950/95 z-50 justify-center items-center p-6 cursor-pointer" onclick="closeLightbox()">
+        <div class="relative max-w-full max-h-full text-center">
+            <img id="lightbox-img" src="" alt="" class="max-h-[80vh] max-w-full object-contain rounded-2xl border-4 border-gray-700 mx-auto">
+            <p id="lightbox-caption" class="text-teal-300 text-2xl mt-6 font-medium"></p>
+        </div>
+    </div>
+
+    <script>
+        function openLightbox(src, alt) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').textContent = alt;
+            document.getElementById('lightbox').classList.add('active');
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
+
