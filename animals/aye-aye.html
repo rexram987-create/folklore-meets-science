@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>האיי-איי - מאגדה למציאות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap');
+        body { font-family: 'Heebo', sans-serif; }
+        #lightbox { display: none; }
+        #lightbox.active { display: flex; }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col">
+
+    <!-- תפריט ניווט -->
+    <nav class="bg-gray-900 border-b border-gray-800 p-5 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center max-w-5xl">
+            <a href="../index.html" class="text-xl font-bold text-gray-400 hover:text-white transition">← חזרה לראשי</a>
+            <span class="text-2xl font-black text-blue-400">מחקר: האיי-איי (Aye-aye)</span>
+        </div>
+    </nav>
+
+    <main class="flex-grow container mx-auto px-6 py-10 max-w-4xl">
+        
+        <header class="mb-12 border-b border-gray-800 pb-10">
+            <h1 class="text-5xl md:text-7xl font-black mb-6 text-white leading-tight">האיי-איי</h1>
+            <p class="text-3xl text-amber-500 font-medium">משד המוות המסמן באצבעו ועד לפלא האבולוציוני של מדגסקר</p>
+        </header>
+
+        <!-- מחקר אטימולוגי נרחב -->
+        <section class="mb-14 bg-gray-900 p-8 rounded-3xl border border-gray-700 shadow-2xl">
+            <h2 class="text-4xl font-black mb-8 text-blue-400 border-b border-gray-700 pb-4">מחקר אטימולוגי: מקור השמות</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800">
+                    <h3 class="text-2xl font-bold text-amber-400 mb-4">השם המדעי הטקסונומי: Daubentonia madagascariensis</h3>
+                    <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                        השם המדעי הוא שילוב של מחווה לחוקר טבע צרפתי דגול וציון המיקום הגיאוגרפי האנדמי (היחיד בעולם) שבו החיה חיה:
+                    </p>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start">
+                            <span class="text-amber-500 font-bold ml-3 text-xl w-44 shrink-0">Daubentonia:</span>
+                            <span class="text-gray-300">שם הסוג הוענק כמחווה לזואולוג והרופא הצרפתי לואי-ז'אן-מארי דובנטון (Louis-Jean-Marie Daubenton, 1716–1800), שהיה מחלוצי האנטומיה ההשוואתית ושותפו של חוקר הטבע המפורסם בופון.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-amber-500 font-bold ml-3 text-xl w-44 shrink-0">madagascariensis:</span>
+                            <span class="text-gray-300">שם המין מתייחס למקום חיותו הבלעדי של היצור – האי מדגסקר (הסיומת הלטינית "ensis" פירושה "שייך ל-" או "מגיע מ-").</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800">
+                    <h3 class="text-2xl font-bold text-red-400 mb-4">השם הנפוץ: Aye-aye (איי-איי)</h3>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start">
+                            <span class="text-red-400 font-bold ml-3 text-xl w-44 shrink-0">מקור השם (מלגשית):</span>
+                            <span class="text-gray-300">השם מגיע משפתם של ילידי מדגסקר. רוב הבלשנים מעריכים כי מדובר בקריאת פחד או אזהרה ("Hai-hai" או "Hay-hay") שהילידים היו משמיעים כשנתקלו ביצור הלילי הזה ביער, כדי להזהיר אחרים או לגרש את ה"שד". סברה אחרת טוענת שזהו פשוט חיקוי (אונומטופיה) של צליל הציוץ המוזר שהחיה משמיעה.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- תגלית היסטורית -->
+        <section class="mb-14 bg-gray-900/50 p-8 rounded-3xl space-y-8 text-xl text-gray-300 leading-relaxed">
+            <div>
+                <h2 class="text-3xl font-bold text-white mb-4">תגלית מוזרה למדע האירופאי</h2>
+                <p>עבור תושבי מדגסקר, היצור מעולם לא היה תגלית – הוא היה סיוט יומיומי. אך המדע המערבי פגש בו לראשונה בשנת <strong>1780</strong>.</p>
+                <p class="mt-4">
+                    החוקר הצרפתי <strong>פייר סונרה (Pierre Sonnerat, 1748–1814)</strong> סייר במדגסקר וקיבל לידיו פרט אחד שהמקומיים לכדו (למרות פחדם העצום ממנו). סונרה העביר את הפוחלץ בחזרה לצרפת. בתחילה, המדענים היו כה מבולבלים מהאנטומיה שלו (שיניים של מכרסם, זנב של סנאי, אצבעות של קוף ופנים דמויות עטלף) שהם סיווגו אותו בטעות כמכרסם! רק עשרות שנים מאוחר יותר התברר שהאיי-איי הוא למעשה פרימט – מין ייחודי וקמאי של למור.
+                </p>
+            </div>
+        </section>
+
+        <!-- מיתוס לעומת מציאות והבדלים ביולוגיים -->
+        <section class="mb-14 space-y-8 text-xl text-gray-300 leading-relaxed">
+            <div class="border-t border-gray-700 pt-8">
+                <h2 class="text-3xl font-bold text-white mb-4">מיתוס שד המוות מול המציאות</h2>
+                <p><strong>האגדה (טאבו הפאדי - Fady):</strong> בתרבויות המלגשיות (כמו שבט הסקלאבה), האיי-איי נחשב להתגלמות רוע טהור ולמבשר מוות. המיתוס גורס שאם האיי-איי מכוון את האצבע האמצעית והגרמית שלו לעבר אדם – אותו אדם נידון למוות מיידי וקליל. בשל אמונה קשה זו, ילידים רבים נהגו לצוד ולהרוג את האיי-איי ברגע שראו אותו, ותלו את גופותיהם בצמתים כדי להרחיק את ה"עין הרע", מה שהביא את המין לסף הכחדה.</p>
+                <p class="mt-4"><strong>המציאות:</strong> האיי-איי הוא יצור עדין לחלוטין, ביישן, ואינו מסוכן כלל לבני אדם. האצבע ה"מכושפת" שלו היא למעשה אחד הכלים האבולוציוניים המבריקים ביותר בטבע, המשמשת לחיפוש מזון!</p>
+            </div>
+
+            <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800 mt-6">
+                <h3 class="text-2xl font-bold text-blue-300 mb-6">מאפיינים ביולוגיים: הפרימט הלילי הגדול בעולם</h3>
+                <ul class="list-disc list-inside space-y-4 text-lg mb-8">
+                    <li><strong>ליקוט בהקשה (Percussive Foraging):</strong> זו המטרה האמיתית של ה"אצבע המכושפת"! האיי-איי מקיש על גזעי עצים עם אצבעו האמצעית (עד 8 פעמים בשנייה!), מקשיב בעזרת אוזני העטלף העצומות שלו להדים, וכך מאתר חללים ריקים שבהם מסתתרים זחלים.</li>
+                    <li><strong>"חכת" ציד מובנית:</strong> ברגע שזיהה זחל תחת הקליפה, הוא קורע את העץ עם שיניו החזקות, ומחדיר את אותה אצבע אמצעית (שיש לה מפרק כדורי גמיש המאפשר לה להסתובב 360 מעלות) כדי "לדוג" את הזחל החוצה.</li>
+                    <li><strong>שיניים של מכרסם:</strong> בניגוד לכל שאר הפרימטים, שיניו החותכות צומחות ללא הרף במהלך כל חייו (כמו של בונה), מה שמאפשר לו לפעור חורים בעץ הקשה ביותר.</li>
+                </ul>
+
+                <!-- תעודת זהות ביולוגית שביקשת -->
+                <h4 class="text-xl font-bold text-amber-300 mb-4 border-t border-gray-700 pt-6">זואולוגיה ומחזור חיים (תעודת זהות)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg">
+                    <div class="bg-gray-900 p-4 rounded-xl border border-gray-700">
+                        <strong class="text-white block mb-1">⏳ תוחלת חיים:</strong>
+                        <span class="text-gray-300">בטבע מעריכים שתוחלת חייהם היא כ-10 עד 20 שנים. בשבי הם יכולים להאריך ימים עד גיל 23.</span>
+                    </div>
+                    <div class="bg-gray-900 p-4 rounded-xl border border-gray-700">
+                        <strong class="text-white block mb-1">🍽️ תזונה (אוכל-כל):</strong>
+                        <span class="text-gray-300">בעיקר זחלים וחרקים שהוא שולף מעצים, אך גם זרעים, פטריות, צוף, ואגוזי קוקוס שאותם הוא מנקב בשיניו.</span>
+                    </div>
+                    <div class="bg-gray-900 p-4 rounded-xl border border-gray-700">
+                        <strong class="text-white block mb-1">🤰 תקופת הריון:</strong>
+                        <span class="text-gray-300">ארוכה למדי ללמור – כ-152 עד 172 ימים (כ-5.5 חודשים). הנקבה ממליטה גור אחד בלבד שלומד את טכניקת הציד המורכבת במשך כשנתיים.</span>
+                    </div>
+                    <div class="bg-gray-900 p-4 rounded-xl border border-gray-700">
+                        <strong class="text-white block mb-1">⚖️ הבדלים בין זכר לנקבה:</strong>
+                        <span class="text-gray-300">כמעט ואין הבדל חיצוני (דו-צורתיות זוויגית נמוכה). הזכר מעט כבד יותר. לנקבה יש מאפיין נדיר בקרב פרימטים: פטמותיה ממוקמות באזור המפשעה ולא בחזה.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- גלריית תמונות -->
+        <section class="mb-14">
+            <h2 class="text-3xl font-bold text-white mb-8">תיעוד חזותי (לחץ להגדלה)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- תמונה 1 (המיתוס) -->
+                <div class="relative group">
+                    <img src="images/aye-aye-myth.jpg" 
+                         alt="איור פולקלור של שד צללים מבעית מצביע עם אצבע גרמית ארוכה" 
+                         class="rounded-2xl cursor-pointer hover:opacity-75 transition duration-300 object-cover h-80 w-full shadow-2xl border border-gray-800"
+                         onclick="openLightbox(this.src, this.alt)">
+                    <p class="absolute bottom-0 bg-black/70 text-white w-full text-center py-2 rounded-b-2xl">המיתוס: "השד המסמן למוות"</p>
+                </div>
+                     
+                <!-- תמונה 2 (מציאות) -->
+                <div class="relative group">
+                    <img src="images/aye-aye-real.jpg" 
+                         alt="איי-איי אמיתי יושב על ענף ביער מדגסקר, עם עיניו הגדולות ואצבעו הארוכה" 
+                         class="rounded-2xl cursor-pointer hover:opacity-75 transition duration-300 object-cover h-80 w-full shadow-2xl border border-gray-800"
+                         onclick="openLightbox(this.src, this.alt)">
+                    <p class="absolute bottom-0 bg-black/70 text-white w-full text-center py-2 rounded-b-2xl">המציאות: צייד הזחלים האבולוציוני</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800 mt-auto">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400 text-lg space-y-2">
+            <p><strong class="text-white">יוצרי האתר והמחקר:</strong> רם והבינה המלאכותית (יעל, מדענית וזואולוגית).</p>
+            <p><strong class="text-white">שנת יצירה:</strong> 2026</p>
+            <p><strong class="text-white">מטרת הבנייה:</strong> מחקר מעמיק החוקר את התפר שבין פולקלור למציאות.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="fixed inset-0 bg-gray-950/95 z-50 justify-center items-center p-6 cursor-pointer" onclick="closeLightbox()">
+        <div class="relative max-w-full max-h-full text-center">
+            <button class="absolute -top-16 right-0 text-white text-5xl hover:text-red-500 font-bold transition">&times;</button>
+            <img id="lightbox-img" src="" alt="" class="max-h-[80vh] max-w-full object-contain rounded-2xl border-4 border-gray-700 mx-auto">
+            <p id="lightbox-caption" class="text-amber-400 text-2xl mt-6 font-medium"></p>
+        </div>
+    </div>
+
+    <script>
+        function openLightbox(src, alt) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').textContent = alt;
+            document.getElementById('lightbox').classList.add('active');
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
+
+
