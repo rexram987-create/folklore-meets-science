@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הצלופח החשמלי - מאגדה למציאות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap');
+        body { font-family: 'Heebo', sans-serif; }
+        #lightbox { display: none; }
+        #lightbox.active { display: flex; }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col">
+
+    <!-- תפריט ניווט -->
+    <nav class="bg-gray-900 border-b border-gray-800 p-5 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center max-w-5xl">
+            <a href="../index.html" class="text-xl font-bold text-gray-400 hover:text-white transition">← חזרה לראשי</a>
+            <span class="text-2xl font-black text-yellow-400">מחקר: צלופח חשמלי (Electric Eel)</span>
+        </div>
+    </nav>
+
+    <main class="flex-grow container mx-auto px-6 py-10 max-w-4xl">
+        
+        <header class="mb-12 border-b border-gray-800 pb-10">
+            <h1 class="text-5xl md:text-7xl font-black mb-6 text-white leading-tight">הצלופח החשמלי</h1>
+            <p class="text-3xl text-yellow-500 font-medium">משד הנהרות הבלתי נראה של האמזונס אל סוללת הטבע החיה</p>
+        </header>
+
+        <!-- מחקר אטימולוגי נרחב -->
+        <section class="mb-14 bg-gray-900 p-8 rounded-3xl border border-gray-700 shadow-2xl">
+            <h2 class="text-4xl font-black mb-8 text-blue-400 border-b border-gray-700 pb-4">מחקר אטימולוגי: מקור השמות</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800">
+                    <h3 class="text-2xl font-bold text-yellow-400 mb-4">השם המדעי הטקסונומי: Electrophorus electricus</h3>
+                    <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                        השם המדעי, שהוענק על ידי קארולוס ליניאוס ב-1766, אינו מותיר מקום לספק באשר לתכונה המרכזית של היצור, ומשלב מונחים מיוונית ולטינית:
+                    </p>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start">
+                            <span class="text-yellow-500 font-bold ml-3 text-xl w-44 shrink-0">Electro:</span>
+                            <span class="text-gray-300">מהמילה היוונית <em>Elektron</em> (ἤλεκτροן), שפירושה המקורי "ענבר" (חומר שדרכו גילו היוונים את החשמל הסטטי), והפכה לשם נרדף לחשמל.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yellow-500 font-bold ml-3 text-xl w-44 shrink-0">phorus:</span>
+                            <span class="text-gray-300">מהמילה היוונית <em>Phoros</em> (φόρος), שפירושה "נושא" או "מביא".</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yellow-500 font-bold ml-3 text-xl w-44 shrink-0">electricus:</span>
+                            <span class="text-gray-300">שם המין (בלטינית), שפירושו פשוט "חשמלי". השם המלא מתורגם מילולית כ: <em>"נושא-החשמל החשמלי"</em>.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800">
+                    <h3 class="text-2xl font-bold text-red-400 mb-4">השם הפולקלוריסטי (שפות טופי-גוארני): Poraquê</h3>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start">
+                            <span class="text-red-400 font-bold ml-3 text-xl w-44 shrink-0">פוראקה (Poraquê):</span>
+                            <span class="text-gray-300">השם שבו מכנים אותו ילידי האמזונס עד היום. בשפתם, משמעות המילה היא <em>"זה שמרדים"</em>, <em>"זה שמשתק"</em> או <em>"מביא השינה"</em> – תיאור מדויק להפליא של הפעולה שהחשמל שלו עושה למערכת העצבים של הטרף (או של דייג חסר מזל).</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- תגלית היסטורית -->
+        <section class="mb-14 bg-gray-900/50 p-8 rounded-3xl space-y-8 text-xl text-gray-300 leading-relaxed">
+            <div>
+                <h2 class="text-3xl font-bold text-white mb-4">התגלית המחשמלת של פון הומבולדט</h2>
+                <p>האירופאים הראשונים שהגיעו לאמזונס סירבו להאמין לסיפורי המקומיים על רוחות נהר שמשתקות סוסים ובני אדם מרחוק. הם ייחסו זאת לאמונות טפלות או לשדים דמיוניים.</p>
+                <p class="mt-4">
+                    אולם, בשנת <strong>1800</strong>, הגיע לאזור איש האשכולות והחוקר הפרוסי הדגול <strong>אלכסנדר פון הומבולדט (Alexander von Humboldt, 1769–1859)</strong>. הוא רצה לתפוס ולחקור את ה"מפלצות" האלו בחיים. המקומיים הסבירו לו שהם לא יכולים פשוט להיכנס למים עם רשת, כי הדג יהרוג אותם או ישתק אותם והם יטבעו. 
+                </p>
+                <p class="mt-4">
+                    במקום זאת, הם השתמשו בשיטה אכזרית אך אפקטיבית: <em>"דיג באמצעות סוסים"</em>. הם הריצו עדר של סוסי בר לתוך הבריכות הבוציות. הצלופחים, שהרגישו מאוימים מפרסות הסוסים, פרקו שוב ושוב את מטעני החשמל שלהם כלפי מעלה בניסיון להתגונן, עד שהם פשוט התרוקנו מאנרגיה ("הסוללה" שלהם התרוקנה). רק אז, כשהצלופחים היו מותשים, הילידים יכלו להיכנס למים ולאסוף אותם בבטחה עבור הומבולדט. התגלית שלו הוכיחה מעבר לכל ספק שחשמל ביולוגי עוצמתי אינו קסם – אלא מציאות.
+                </p>
+            </div>
+        </section>
+
+        <!-- מיתוס לעומת מציאות והבדלים ביולוגיים -->
+        <section class="mb-14 space-y-8 text-xl text-gray-300 leading-relaxed">
+            <div class="border-t border-gray-700 pt-8">
+                <h2 class="text-3xl font-bold text-white mb-4">המיתוס מול המציאות האבולוציונית</h2>
+                <p><strong>האגדה:</strong> שד בלתי נראה, נחש קסום או מכשף מים המשתמש בכוחות על-טבעיים כדי לשתק קורבנות ללא מגע, כפי שתואר בפולקלור האינדיאני.</p>
+                <p class="mt-4"><strong>המציאות:</strong> אנטומיה שמדענים עד היום לומדים ממנה כדי לפתח סוללות ביולוגיות. ופרט מפתיע לא פחות: <strong>הצלופח החשמלי הוא בכלל לא צלופח!</strong> הוא שייך למשפחת דגי הסכין (Gymnotiformes), וקרוב יותר גנטית לשפמנון מאשר לצלופח אמיתי (כמו המורנה).</p>
+            </div>
+
+            <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800 mt-6">
+                <h3 class="text-2xl font-bold text-yellow-300 mb-6">מאפיינים ביולוגיים: סוללה באורך שני מטרים</h3>
+                <ul class="list-disc list-inside space-y-4 text-lg mb-8">
+                    <li><strong>אנטומיית סוללה:</strong> כ-80% מגופו של הדג מורכב משלושה איברים חשמליים ייעודיים (האיבר הראשי, איבר האנטר, ואיבר זאקס). רק ה-20% הקדמיים של גופו מכילים את איבריו הפנימיים האמיתיים (לב, כבד, מעיים).</li>
+                    <li><strong>עוצמת החשמול:</strong> גופו מכיל אלפי תאים ייחודיים הנקראים <em>אלקטרוציטים</em> המסודרים בטור, כמו סוללות בפנס. כשכל התאים נפרקים יחד, הם יכולים לייצר מכת חשמל במתח של עד <strong>860 וולט</strong> (פי 3.5 משקע חשמל ביתי!).</li>
+                    <li><strong>ראיית רדאר:</strong> מאחר שהוא חי במים עכורים ובוציים וראייתו חלשה מאוד, הוא משתמש בפריקות חשמל במתח נמוך מאוד (10 וולט) בתור רדאר/סונאר כדי לנווט ולתקשר עם צלופחים אחרים.</li>
+                    <li><strong>נושם אוויר (אובליגטורי):</strong> המים הבוציים באמזונס דלים בחמצן. לכן, הפה שלו מלא בכלי דם, והוא חייב לעלות אל פני המים כל 10-15 דקות כדי לקחת "שלוק" של אוויר מהאטמוספירה, אחרת יטבע.</li>
+                </ul>
+
+                <!-- תעודת זהות ביולוגית -->
+                <h4 class="text-xl font-bold text-blue-300 mb-4 border-t border-gray-700 pt-6">זואולוגיה ומחזור חיים (תעודת זהות)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg">
+                    <div class="bg-gray-900 p-4 rounded-xl border border-gray-700">
+                        <strong class="text-white block mb-1">⏳ תוחלת חיים:</strong>
+                        <span class="text-gray-300">בטבע מעריכים שהם חיים כ-15 שנים. בשבי (למשל באקווריומים ציבוריים מותאמים), תוחלת חייהם עולה והם יכולים להגיע עד לגיל 22 שנים.</span>
+                    </div>
+                    <div class="bg-gray-900 p-4 rounded-xl border border-gray-700">
+                        <strong class="text-white block mb-1">🍽️ תזונה:</strong>
+                        <span class="text-gray-300">טורף (קרניבור) מוחלט. התזונה מורכבת בעיקר מדגים, דו-חיים, סרטנים, ולעיתים גם עופות מים קטנים או יונקים קטנים שהתקרבו יותר מדי למים. הטרף נבלע בשלמותו לאחר ששותק.</span>
+                    </div>
+                    <div class="bg-gray-900 p-4 rounded-xl border border-gray-700">
+                        <strong class="text-white block mb-1">🥚 תקופת דגירה (לא הריון):</strong>
+                        <span class="text-gray-300">מכיוון שזהו דג, אין "הריון". בעונת היובש, הזכר בונה קן קצף מרוק. הנקבה מטילה לתוכו עד 3,000 ביצים. הזכר מפרה אותן ושומר עליהן בקנאות (ומחשמל כל איום). הביצים בוקעות תוך כ-7 עד 14 ימים בלבד.</span>
+                    </div>
+                    <div class="bg-gray-900 p-4 rounded-xl border border-gray-700">
+                        <strong class="text-white block mb-1">⚖️ הבדלים בין זכר לנקבה:</strong>
+                        <span class="text-gray-300">הזכרים גדולים וארוכים יותר משמעותית מהנקבות (יכולים להגיע ל-2.5 מטרים ולשקול 20 ק"ג). מעבר לגודל, הזכרים הם אלו שמפגינים התנהגות טריטוריאלית והורית בבניית קן הקצף.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- גלריית תמונות -->
+        <section class="mb-14">
+            <h2 class="text-3xl font-bold text-white mb-8">תיעוד חזותי (לחץ להגדלה)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- תמונה 1 (המיתוס) -->
+                <div class="relative group">
+                    <img src="images/eel-myth.jpg" 
+                         alt="ציור היסטורי בו סוסי בר מזנקים בבהלה מנהר בוצי בעוד צלופחים חשמליים תוקפים אותם" 
+                         class="rounded-2xl cursor-pointer hover:opacity-75 transition duration-300 object-cover h-80 w-full shadow-2xl border border-gray-800"
+                         onclick="openLightbox(this.src, this.alt)">
+                    <p class="absolute bottom-0 bg-black/70 text-white w-full text-center py-2 rounded-b-2xl">המיתוס: "הדיג באמצעות סוסים" של הומבולדט</p>
+                </div>
+                     
+                <!-- תמונה 2 (מציאות) -->
+                <div class="relative group">
+                    <img src="images/eel-real.jpg" 
+                         alt="צלופח חשמלי אמיתי שוחה במים כהים עם ניצוצות חשמל עדינים סביבו" 
+                         class="rounded-2xl cursor-pointer hover:opacity-75 transition duration-300 object-cover h-80 w-full shadow-2xl border border-gray-800"
+                         onclick="openLightbox(this.src, this.alt)">
+                    <p class="absolute bottom-0 bg-black/70 text-white w-full text-center py-2 rounded-b-2xl">המציאות: סוללה ביולוגית במעמקי האמזונס</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800 mt-auto">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400 text-lg space-y-2">
+            <p><strong class="text-white">יוצרי האתר והמחקר:</strong> רם והבינה המלאכותית (יעל, מדענית וזואולוגית).</p>
+            <p><strong class="text-white">שנת יצירה:</strong> 2026</p>
+            <p><strong class="text-white">מטרת הבנייה:</strong> מחקר מעמיק החוקר את התפר שבין פולקלור למציאות מדעית.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="fixed inset-0 bg-gray-950/95 z-50 justify-center items-center p-6 cursor-pointer" onclick="closeLightbox()">
+        <div class="relative max-w-full max-h-full text-center">
+            <button class="absolute -top-16 right-0 text-white text-5xl hover:text-red-500 font-bold transition">&times;</button>
+            <img id="lightbox-img" src="" alt="" class="max-h-[80vh] max-w-full object-contain rounded-2xl border-4 border-gray-700 mx-auto">
+            <p id="lightbox-caption" class="text-yellow-400 text-2xl mt-6 font-medium"></p>
+        </div>
+    </div>
+
+    <script>
+        function openLightbox(src, alt) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').textContent = alt;
+            document.getElementById('lightbox').classList.add('active');
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
+
