@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הפנדה הענקית - מאגדה למציאות</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap');
+        body { font-family: 'Heebo', sans-serif; }
+        #lightbox { display: none; }
+        #lightbox.active { display: flex; }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col">
+
+    <!-- תפריט ניווט -->
+    <nav class="bg-gray-900 border-b border-gray-800 p-5 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center max-w-5xl">
+            <a href="../index.html" class="text-xl font-bold text-gray-400 hover:text-white transition">← חזרה לראשי</a>
+            <span class="text-2xl font-black text-emerald-400">מחקר: הפנדה הענקית (Giant Panda)</span>
+        </div>
+    </nav>
+
+    <main class="flex-grow container mx-auto px-6 py-10 max-w-4xl">
+        
+        <header class="mb-12 border-b border-gray-800 pb-10">
+            <h1 class="text-5xl md:text-7xl font-black mb-6 text-white leading-tight">הפנדה הענקית</h1>
+            <p class="text-3xl text-emerald-500 font-medium">מ"מתיחת העורות התפורים" אל דוב הרפאים של הרי סין</p>
+        </header>
+
+        <!-- מחקר אטימולוגי נרחב -->
+        <section class="mb-14 bg-gray-900 p-8 rounded-3xl border border-gray-700 shadow-2xl">
+            <h2 class="text-4xl font-black mb-8 text-blue-400 border-b border-gray-700 pb-4">מחקר אטימולוגי: מקור השמות</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800">
+                    <h3 class="text-2xl font-bold text-emerald-400 mb-4">השם המדעי הטקסונומי: Ailuropoda melanoleuca</h3>
+                    <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                        השם המדעי של הפנדה מתאר למעשה את האנטומיה הייחודית שלה ואת הצבעים המנוגדים, והוא מורכב מחיבור של מונחים מיוונית עתיקה:
+                    </p>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start">
+                            <span class="text-emerald-500 font-bold ml-3 text-xl w-44 shrink-0">Ailuropoda:</span>
+                            <span class="text-gray-300">הלחם של המילים היווניות <em>Ailouros</em> (חתול) ו-<em>Pous / Poda</em> (רגל/כף רגל). הסיבה לכך היא שהאישונים של הפנדה (כמו של חתול) הם בצורת חריץ אנכי, בניגוד לאישונים העגולים של שאר הדובים. כלומר: "בעל רגלי (או מאפייני) חתול".</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-emerald-500 font-bold ml-3 text-xl w-44 shrink-0">melanoleuca:</span>
+                            <span class="text-gray-300">הלחם של המילים <em>Melas</em> (שחור) ו-<em>Leukos</em> (לבן). התרגום המלא של השם המדעי הוא: <em>"דמוי-החתול השחור-לבן"</em>.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800">
+                    <h3 class="text-2xl font-bold text-gray-300 mb-4">השם הנפוץ: Panda (פנדה)</h3>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start">
+                            <span class="text-gray-400 font-bold ml-3 text-xl w-44 shrink-0">מקור השם (נפאלית):</span>
+                            <span class="text-gray-300">המקור המדויק לוט בערפל, אך החוקרים סבורים שהמילה מגיעה מהשפה הנפאלית, מהמילה <em>Ponya</em>, שפירושה "אוכל במבוק" או "חיה בעלת כרית כף רגל שנועדה לאחוז במבוק". מעניין לציין שהשם ניתן במקור לפנדה האדומה, ורק מאוחר יותר הועבר ל"פנדה הענקית". בסינית היא נקראת <em>Dàxióngmāo</em> (大熊猫), שפירושו "דוב-חתול גדול".</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- תגלית היסטורית -->
+        <section class="mb-14 bg-gray-900/50 p-8 rounded-3xl space-y-8 text-xl text-gray-300 leading-relaxed">
+            <div>
+                <h2 class="text-3xl font-bold text-white mb-4">התגלית שהייתה "טובה מכדי להיות אמיתית"</h2>
+                <p>עד אמצע המאה ה-19, המדע המערבי לא ידע דבר על קיומו של יונק גדול בשחור-לבן בהרי סין. ציידים ונוסעים הביאו עימם שמועות על "דוב לבן" מסתורי שחי ביערות במבוק סבוכים בטיבט ובסצ'ואן.</p>
+                <p class="mt-4">
+                    כאשר הגיעו העורות הראשונים של פנדות לאירופה, הקהילה המדעית בלונדון ובפריז הייתה משוכנעת שמדובר ב<strong>זיוף מתוחכם</strong>. בדיוק כמו במקרה של הברווזן, חוקרים האמינו שסוחרים סינים תפרו יחד חתיכות של עור דוב שחור ועור של דוב לבן (או כלב גדול) כדי למכור אותם ביוקר כמוצר פלאי.
+                </p>
+                <p class="mt-4">
+                    המיתוס הופרך מדעית רק בשנת <strong>1869</strong>, כאשר המיסיונר, הזואולוג והבוטנאי הצרפתי, <strong>האב ארמאן דוד (Armand David, 1826–1900)</strong>, נסע למזרח סין. הוא רכש שלד שלם ופרווה מצייד מקומי, שלח אותם למוזיאון להיסטוריה של הטבע בפריז, והוכיח שמפלצת ה"שחור-לבן" היא מין אמיתי לחלוטין של דוב שהסתגל לחיים נסתרים.
+                </p>
+            </div>
+        </section>
+
+        <!-- מיתוס לעומת מציאות והבדלים ביולוגיים -->
+        <section class="mb-14 space-y-8 text-xl text-gray-300 leading-relaxed">
+            <div class="border-t border-gray-700 pt-8">
+                <h2 class="text-3xl font-bold text-white mb-4">מיתוס המתיחה מול המציאות האבולוציונית</h2>
+                <p><strong>האגדה:</strong> מפלצת שנתפרה מעורות שונים, או "דוב רפאים" קטלני המסוגל ללעוס מתכת (כך האמינו חלק מהמקומיים בשל שיני הפנדה החזקות שריסקו סירי נחושת של נוודים).</p>
+                <p class="mt-4"><strong>המציאות:</strong> הפנדה היא דוב שהחליט, מסיבות אבולוציוניות, להפוך לצמחוני כמעט מוחלט, תוך פיתוח התאמות גופניות ביזאריות כדי לשרוד את התזונה הדלה הזו.</p>
+            </div>
+
+            <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800 mt-6">
+                <h3 class="text-2xl font-bold text-blue-300 mb-6">מאפיינים ביולוגיים: טורף שאוכל עשב</h3>
+                <ul class="list-disc list-inside space-y-4 text-lg mb-8">
+                    <li><strong>אגודל מדומה (Pseudo-thumb):</strong> לפנדה אין אגודלים אמיתיים. במקום זאת, עצם שורש כף היד (העצם הססמואידית) שלה התארכה והפכה ל"אגודל שישי" גמיש, שמאפשר לה לאחוז בגבעולי במבוק עבים בקלות.</li>
+                    <li><strong>מערכת עיכול של טורף:</strong> מבחינה אנטומית, קיבת הפנדה היא של קרניבור (טורף בשר). אין לה לה מספר קיבות כמו לפרה כדי לעכל תאית. לכן, היא מנצלת רק כ-17% מהערך התזונתי של הבמבוק, ונאלצת לאכול עד 38 ק"ג ממנו בכל יום!</li>
+                    <li><strong>כוח נשיכה:</strong> כדי לרסק את הצינורות הקשים של הבמבוק, הפנדה פיתחה גולגולת עצומה ושרירי לסת חזקים מרוב הדובים, המעניקים לה כוח נשיכה עוצמתי השווה לזה של יגואר.</li>
+                </ul>
+
+                <!-- תעודת זהות ביולוגית -->
+                <h4 class="text-xl font-bold text-emerald-300 mb-4 border-t border-gray-700 pt-6">זואולוגיה ומחזור חיים (תעודת זהות)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg">
+                    <div class="bg-gray-900 p-4 rounded-xl border border-gray-700">
+                        <strong class="text-white block mb-1">⏳ תוחלת חיים:</strong>
+                        <span class="text-gray-300">בטבע חיות הפנדות בין 15 ל-20 שנים. בשבי, בזכות טיפול רפואי (ובלי סכנות), הן יכולות להגיע עד לגיל מופלג של 30 שנים ואף יותר.</span>
+                    </div>
+                    <div class="bg-gray-900 p-4 rounded-xl border border-gray-700">
+                        <strong class="text-white block mb-1">🍽️ תזונה:</strong>
+                        <span class="text-gray-300">התזונה מבוססת 99% על במבוק (חיזרן). האחוז הנותר עשוי לכלול ביצים, מכרסמים קטנים או פגרים שהיא מוצאת, עדות לעברה כטורפת.</span>
+                    </div>
+                    <div class="bg-gray-900 p-4 rounded-xl border border-gray-700">
+                        <strong class="text-white block mb-1">🤰 תקופת הריון (השתהות עוברית):</strong>
+                        <span class="text-gray-300">ההריון נמשך בין 95 ל-160 ימים. הסיבה לפער העצום היא "השתלת עובר מושהית" – העובר צף ברחם ולא מתפתח עד שהאם נמצאת בסביבה אופטימלית של מזון. הגור נולד זעיר להחריד, עיוור וקרח, במשקל של כ-100 גרם (1/900 ממשקל אמו, מוגדר מדעית כ-"לא אפוי לגמרי").</span>
+                    </div>
+                    <div class="bg-gray-900 p-4 rounded-xl border border-gray-700">
+                        <strong class="text-white block mb-1">⚖️ הבדלים בין זכר לנקבה:</strong>
+                        <span class="text-gray-300">זכרים בוגרים גדולים וכבדים יותר מנקבות בכ-10% עד 20%. זכר עשוי להגיע למשקל של 115 ק"ג, בעוד נקבה תשקול לרוב עד 100 ק"ג.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- גלריית תמונות -->
+        <section class="mb-14">
+            <h2 class="text-3xl font-bold text-white mb-8">תיעוד חזותי (לחץ להגדלה)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- תמונה 1 (המיתוס) -->
+                <div class="relative group">
+                    <img src="images/panda-myth.jpg" 
+                         alt="ציור של מדענים ויקטוריאנים בוחנים פרוות פנדה וחושדים שהיא תפורה יחד" 
+                         class="rounded-2xl cursor-pointer hover:opacity-75 transition duration-300 object-cover h-80 w-full shadow-2xl border border-gray-800"
+                         onclick="openLightbox(this.src, this.alt)">
+                    <p class="absolute bottom-0 bg-black/70 text-white w-full text-center py-2 rounded-b-2xl">המיתוס: מתיחת "העורות התפורים"</p>
+                </div>
+                     
+                <!-- תמונה 2 (מציאות) -->
+                <div class="relative group">
+                    <img src="images/panda-real.jpg" 
+                         alt="פנדה ענקית אמיתית יושבת ואוכלת במבוק ביער ערפילי בסין" 
+                         class="rounded-2xl cursor-pointer hover:opacity-75 transition duration-300 object-cover h-80 w-full shadow-2xl border border-gray-800"
+                         onclick="openLightbox(this.src, this.alt)">
+                    <p class="absolute bottom-0 bg-black/70 text-white w-full text-center py-2 rounded-b-2xl">המציאות: הדוב אוכל העשב</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800 mt-auto">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400 text-lg space-y-2">
+            <p><strong class="text-white">יוצרי האתר והמחקר:</strong> רם והבינה המלאכותית (יעל, מדענית וזואולוגית).</p>
+            <p><strong class="text-white">שנת יצירה:</strong> 2026</p>
+            <p><strong class="text-white">מטרת הבנייה:</strong> מחקר מעמיק החוקר את התפר שבין פולקלור למציאות מדעית.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="fixed inset-0 bg-gray-950/95 z-50 justify-center items-center p-6 cursor-pointer" onclick="closeLightbox()">
+        <div class="relative max-w-full max-h-full text-center">
+            <button class="absolute -top-16 right-0 text-white text-5xl hover:text-red-500 font-bold transition">&times;</button>
+            <img id="lightbox-img" src="" alt="" class="max-h-[80vh] max-w-full object-contain rounded-2xl border-4 border-gray-700 mx-auto">
+            <p id="lightbox-caption" class="text-emerald-400 text-2xl mt-6 font-medium"></p>
+        </div>
+    </div>
+
+    <script>
+        function openLightbox(src, alt) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').textContent = alt;
+            document.getElementById('lightbox').classList.add('active');
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
+
